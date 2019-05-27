@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b2d87c7c750b73623cdfed0abe48d56b",
+    "content-hash": "275c07ffdaa02f469cfaa9f77ac5ce7f",
     "packages": [
         {
             "name": "beberlei/DoctrineExtensions",
@@ -1501,12 +1501,12 @@
             "version": "v2.5.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/doctrine2.git",
+                "url": "https://github.com/doctrine/orm.git",
                 "reference": "e6c434196c8ef058239aaa0724b4aadb0107940b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/e6c434196c8ef058239aaa0724b4aadb0107940b",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/e6c434196c8ef058239aaa0724b4aadb0107940b",
                 "reference": "e6c434196c8ef058239aaa0724b4aadb0107940b",
                 "shasum": ""
             },
@@ -1659,7 +1659,7 @@
             "support": {
                 "source": "https://github.com/garak/FrequenceWebCalendRBundle/tree/patch-2"
             },
-            "time": "2016-04-17 16:08:49"
+            "time": "2016-04-17T16:08:49+00:00"
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
@@ -2074,12 +2074,12 @@
             "version": "1.3.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Jasig/phpCAS.git",
+                "url": "https://github.com/apereo/phpCAS.git",
                 "reference": "8c74d21630f74278270830fdbdb0c1317bce3f0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jasig/phpCAS/zipball/8c74d21630f74278270830fdbdb0c1317bce3f0a",
+                "url": "https://api.github.com/repos/apereo/phpCAS/zipball/8c74d21630f74278270830fdbdb0c1317bce3f0a",
                 "reference": "8c74d21630f74278270830fdbdb0c1317bce3f0a",
                 "shasum": ""
             },
@@ -3275,12 +3275,12 @@
             "version": "3.5.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fruux/sabre-vobject.git",
+                "url": "https://github.com/sabre-io/vobject.git",
                 "reference": "129d80533a9ec0d9cacfb50b51180c34edb6874c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fruux/sabre-vobject/zipball/129d80533a9ec0d9cacfb50b51180c34edb6874c",
+                "url": "https://api.github.com/repos/sabre-io/vobject/zipball/129d80533a9ec0d9cacfb50b51180c34edb6874c",
                 "reference": "129d80533a9ec0d9cacfb50b51180c34edb6874c",
                 "shasum": ""
             },
@@ -3757,6 +3757,7 @@
                 "compression",
                 "minification"
             ],
+            "abandoned": "symfony/webpack-encore-pack",
             "time": "2016-11-22T11:42:57+00:00"
         },
         {
@@ -4888,20 +4889,23 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v3.2.2",
+            "version": "v4.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "d32e4062c3a3dfb95709d2ca6dd89a327ae51c3b"
+                "reference": "31f2e3c10bc9bd955ca1ae3e4da2bb489205714a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/d32e4062c3a3dfb95709d2ca6dd89a327ae51c3b",
-                "reference": "d32e4062c3a3dfb95709d2ca6dd89a327ae51c3b",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/31f2e3c10bc9bd955ca1ae3e4da2bb489205714a",
+                "reference": "31f2e3c10bc9bd955ca1ae3e4da2bb489205714a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
+            },
+            "conflict": {
+                "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0"
             },
             "suggest": {
                 "symfony/debug": "For tracking deprecated interfaces usages at runtime with DebugClassLoader"
@@ -4912,7 +4916,11 @@
             "type": "symfony-bridge",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.2-dev"
+                    "dev-master": "4.2-dev"
+                },
+                "thanks": {
+                    "name": "phpunit/phpunit",
+                    "url": "https://github.com/sebastianbergmann/phpunit"
                 }
             },
             "autoload": {
@@ -4942,7 +4950,7 @@
             ],
             "description": "Symfony PHPUnit Bridge",
             "homepage": "https://symfony.com",
-            "time": "2017-01-06T17:19:17+00:00"
+            "time": "2019-04-23T14:37:24+00:00"
         },
         {
             "name": "symfony/polyfill-php54",
